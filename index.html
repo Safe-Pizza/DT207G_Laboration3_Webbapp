@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/css/style.css">
+  <title>dt207g-lab2-webbapp</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Lab2 - API</h1>
+      <div class="container-hamburger">
+        <div id="hamburger-menu">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+      <nav id="main-nav">
+        <ul>
+          <li class="current-page"><a href="/">Startsida</a></li>
+          <li><a href="/add">Lägg till</a></li>
+          <li><a href="/about">Om sidan</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Startsida</h2>
+      <p>Här listas att jobb hämtade från APIet skapat för Laboration 2 i kurs DT207G.</p>
+
+      <div id="api-result">
+
+      </div>
+      <ul id="errors-change">
+
+      </ul>
+      <div id="form-change" class="hidden">
+        <label for="change-companyname">Företagsnamn: </label><br>
+        <input type="text" id="change-companyname"><br>
+
+        <label for="change-jobtitle">Jobbtitel: </label><br>
+        <input type="text" id="change-jobtitle"><br>
+
+        <label for="change-location">Stad: </label><br>
+        <input type="text" id="change-location"><br>
+
+        <label for="change-desctiption">Beskrivning: </label><br>
+        <input type="text" id="change-description"><br>
+
+        <label for="change-startdate">Startdatum: </label><br>
+        <input type="text" id="change-startdate"><br>
+
+        <label for="change-enddate">Slutdatum: </label><br>
+        <input type="text" id="change-enddate"><br>
+
+      </div>
+    </main>
+    <footer>
+      <p>&copy; Hanna Lindkvist, 2026</p>
+    </footer>
+  </div>
+  <script type="module" src="/src/js/main.js"></script>
+  <script type="module" src="/src/js/api.js"></script>
+</body>
+
+</html>

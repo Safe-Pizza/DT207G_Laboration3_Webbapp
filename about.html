@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>dt207g-lab2-webbapp</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Lab2 - API</h1>
+            <div class="container-hamburger">
+                <div id="hamburger-menu">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="/">Startsida</a></li>
+                    <li><a href="/add">Lägg till</a></li>
+                    <li class="current-page"><a href="/about">Om sidan</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Om sidan</h2>
+            <p>Detta är en laboration i kursen DT207G - Backenbaserad webbutveckling för Mittuniversitetet.</p>
+            <p>Laborationen har som mål att skapa och konsumera en REST-baserad webbtjänst (API). Denna webbapplikation konsumerar den skapade webbtjänsten.</p>
+            <p>I webbapplikationen hämtas arbetserfarenheter från webbtjänsten och presenteras på startsidan. Varje arbetserfarenhet går att ta bort och ändra i webbtjänsten från startsidan. Sidan lägg till skapar nya arbetserfarenheter i webbtjänsten.</p>
+            <h3>Syfte</h3>
+            <p>Laborationen har som syfte att:
+                <ul>
+                    <li>Skapa en REST-baserad webbtjänst som använder en relationsdatabas för lagring</li>
+                    <li>Använda Fetch API för att konsumera webbtjänsten</li>
+                    <li>Förstår hur webbtjänster kan användas för att skapa moderna applikationer</li>
+                </ul>
+            </p>
+            <h3>Databas</h3>
+            <p>Som databas i denna laboration har SQLite3 (better-sqlite3) används för lagring av data.</p>
+            <h3>Slutsats</h3>
+            <p>I laborationen har jag utvecklat en REST-webbtjänst och sedan integrerat i webbapplikation som konsumerar webbtjänsten. CRUD (Create, Read, Update, Delete) är implemeterat som använder GET, POST, PUT och DELETE för att hämta och göra ändringar.</p>
+            <p>Arbete med denna laboration har gett förståelse för hur man skapar en REST-baserad webbtjänst, hur arkitekturen för detta ser ut och hur processen för detta ser ut från planering till testning och konsumering.
+                Jag har även fått en djupare förståelse för validering och vikten av att tydligt förmedla eventuella fel, för korrekt lagring av data men också för användarupplevelsen och användgränssnittet.
+                Sammataget har laborationen varit en lärande uppgift för att utveckla moderna webbapplikationer och gett en bra introduktion till REST-webbtjänsters arkitetur och utvecklande.
+            </p>
+        </main>
+        <footer>
+            <p>&copy; Hanna Lindkvist, 2026</p>
+        </footer>
+    </div>
+    <script type="module" src="/src/js/main.js"></script>
+</body>
+
+</html>

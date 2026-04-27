@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>dt207g-lab2-webbapp</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Lab2 - API</h1>
+            <div class="container-hamburger">
+                <div id="hamburger-menu">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="/">Startsida</a></li>
+                    <li class="current-page"><a href="/add">Lägg till</a></li>
+                    <li><a href="/about">Om sidan</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Lägg till</h2>
+            <p>Här kan du lägga till fler jobb i APIet</p>
+            <ul id="errors">
+
+            </ul>
+
+            <div id="form-add">
+                <label for="companyname">Företagsnamn: </label><br>
+                <input type="text" id="companyname"><br>
+
+                <label for="jobtitle">Jobbtitel: </label><br>
+                <input type="text" id="jobtitle"><br>
+
+                <label for="location">Stad: </label><br>
+                <input type="text" id="location"><br>
+
+                <label for="desctiption">Beskrivning: </label><br>
+                <input type="text" id="description"><br>
+
+                <label for="startdate">Startdatum: </label><br>
+                <input type="text" id="startdate"><br>
+
+                <label for="enddate">Slutdatum: </label><br>
+                <input type="text" id="enddate"><br>
+
+                <button id="submit-button">Lägg till</button>
+
+            </div>
+        </main>
+        <footer>
+            <p>&copy; Hanna Lindkvist, 2026</p>
+        </footer>
+    </div>
+    <script type="module" src="/src/js/main.js"></script>
+    <script type="module" src="/src/js/addApi.js"></script>
+</body>
+
+</html>
