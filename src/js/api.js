@@ -5,7 +5,7 @@ fetchData();
 //fetch funktion jobb-API
 async function fetchData() {
     try {
-        const response = await fetch("http://localhost:5000/jobs");
+        const response = await fetch("https://dt207g-laboration3.onrender.com/jobs");
         const data = await response.json();
 
         if (response.ok) {
@@ -19,7 +19,7 @@ async function fetchData() {
 //funktion för DELETE i API
 async function deleteJob(id) {
     try {
-        const res = await fetch(`http://localhost:5000/jobs/${id}`, {
+        const res = await fetch(`https://dt207g-laboration3.onrender.com/jobs/${id}`, {
             method: "DELETE",
         });
 
@@ -33,7 +33,7 @@ async function deleteJob(id) {
 //funktion för PUT (ändring av befintligt jobb) i API
 async function changeJob(id, job) {
     try {
-        const res = await fetch(`http://localhost:5000/jobs/${id}`, {
+        const res = await fetch(`https://dt207g-laboration3.onrender.com/jobs/${id}`, {
             method: "PUT",
             headers: {
                 "content-type": "application/json"

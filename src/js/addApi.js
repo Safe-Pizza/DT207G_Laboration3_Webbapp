@@ -84,7 +84,7 @@ function addJob() {
 
 //funktion för POST till API
 async function createJob(job) {
-    const res = await fetch("http://localhost:5000/jobs", {
+    const res = await fetch("https://dt207g-laboration3.onrender.com/jobs", {
         method: "POST",
         headers: {
             "content-type": "application/json"
