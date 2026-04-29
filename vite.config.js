@@ -11,5 +11,6 @@ export default defineConfig({
                 about: resolve(__dirname, "about.html")
             }
         }
-    }
+    },
+    base: "/DT207G_Laboration3_Webbapp/"
 })
