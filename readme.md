@@ -2,7 +2,7 @@
 Detta är en laboration i _Webbutveckingsprogrammet_ på Mittuniveristetet.
 
 ## Redovsning
-[Redovisningsvideo]()
+[Webbplats](https://safe-pizza.github.io/DT207G_Laboration3_Webbapp/)
 
 ## Syfte
 Syftet med denna laboration använda Fetch API för att konsumera webbtjänsten för arbetserfarnheter skapad i uppgift 1 för Laboration 3.
